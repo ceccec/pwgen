@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta http-equiv="Expires" content="<%= Time.at(0) %>">
+		<meta http-equiv="Pragma" content="no-cache">
+		<title>Online secure password generator</title>
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-26192375-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+	</head>
+	<body>
+		<h1>Online secure password generator</h1>
+		<table>
+			<% 20.times do %>
+				<tr>
+					<td><code><%= SecureRandom.urlsafe_base64(5) %></code></td>
+					<td><code><%= SecureRandom.urlsafe_base64(6) %></code></td>
+					<td><code><%= SecureRandom.urlsafe_base64(7) %></code></td>
+					<td><code><%= SecureRandom.urlsafe_base64(8) %></code></td>
+					<td><code><%= SecureRandom.urlsafe_base64(9) %></code></td>
+					<td><code><%= SecureRandom.urlsafe_base64(10) %></code></td>
+				</tr>
+			<% end %>
+		</table>
+		<p>Passwords generated with ruby <strong>SecureRandom.urlsafe_base64</strong></p>
+	</body>
+</html>

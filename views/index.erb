@@ -21,6 +21,7 @@
 	</head>
 	<body>
 		<h1>Online secure password generator</h1>
+		<p><a href="">Get</a> a set of strong <strong>secure passwords</strong> generated with <a href="http://rubydoc.info/stdlib/securerandom/1.9.2/SecureRandom">SecureRandom.urlsafe_base64</a>.</p>
 		<table>
 			<% 20.times do %>
 				<tr>
@@ -33,7 +34,11 @@
 				</tr>
 			<% end %>
 		</table>
-		<p>Passwords generated with ruby <strong>SecureRandom.urlsafe_base64</strong></p>
-		<p><a href="">Reload</a> this page for a new set of secure passwords!</p>
+		<p>Clone from <a href="https://github.com/ceccec/pwgen">https://github.com/ceccec/pwgen</a></p>
+		<p>
+			<iframe src="http://www.facebook.com/plugins/like.php?href=<%= request.url %>"
+	        scrolling="no" frameborder="0"
+	        style="border:none; width:450px; height:80px"></iframe>
+		</p>
 	</body>
 </html>

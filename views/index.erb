@@ -5,23 +5,10 @@
 		<meta http-equiv="Expires" content="<%= Time.at(0) %>">
 		<meta http-equiv="Pragma" content="no-cache">
 		<title>Online secure password generator</title>
-		<script type="text/javascript">
-
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-26192375-1']);
-		  _gaq.push(['_trackPageview']);
-
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-
-		</script>
 	</head>
 	<body>
 		<h1>Online secure password generator</h1>
-		<p><a href="">Get</a> a set of strong <strong>secure passwords</strong> generated with <a href="http://rubydoc.info/stdlib/securerandom/1.9.2/SecureRandom">SecureRandom.urlsafe_base64</a>.</p>
+		<p><a href="">Get</a> a set of strong <strong>secure passwords</strong> generated with SecureRandom.urlsafe_base64.</p>
 		<table>
 			<% 20.times do %>
 				<tr>
@@ -35,10 +22,5 @@
 			<% end %>
 		</table>
 		<p>Clone from <a href="https://github.com/ceccec/pwgen">https://github.com/ceccec/pwgen</a></p>
-		<p>
-			<iframe src="https://www.facebook.com/plugins/like.php?href=<%= request.url %>"
-	        scrolling="no" frameborder="0"
-	        style="border:none; width:450px; height:80px"></iframe>
-		</p>
 	</body>
 </html>
